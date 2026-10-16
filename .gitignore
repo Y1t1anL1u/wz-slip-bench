@@ -1,0 +1,17 @@
+# raw archives and indexes (100+ GB) — never commit
+*.tar
+*.tar.*
+*.index
+*_filelist.txt
+# model response cache and run outputs (reproducible; large)
+cache/
+out/
+# python
+__pycache__/
+*.pyc
+.venv/
+# large data lives in data/ only as the small marked parquet (see data/README.md)
+data/*.parquet
+!data/task_c_slip_nc_marked.parquet
+# editor/os
+.vscode/ .idea/ .DS_Store Thumbs.db
